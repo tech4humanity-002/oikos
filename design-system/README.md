@@ -15,7 +15,11 @@ These files are generated from the OIKOS portfolio workbook. The workbook remain
 
 REAL: source values extracted from the workbook into JSON and CSS; seven layers and three templates represented; workbook contains the integration and adapter contract.
 
-PARTIAL: Astryx package/export/theme binding, typography and icon reconciliation, renderer wiring across existing factories, accessibility/contrast automation, and production render verification.
+PARTIAL: the custom Astryx theme has not yet been generated from the current CLI version; typography and icon reconciliation, renderer wiring across existing factories, accessibility/contrast automation, and production render verification remain open.
+
+## Astryx theme build procedure
+
+Use the project-pinned `@astryxdesign/core` and matching `@astryxdesign/cli` versions. Run `npx @astryxdesign/cli docs theme` and `npx @astryxdesign/cli docs tokens` to retrieve the installed version's exact theme contract, then use `npx @astryxdesign/cli theme build` to generate a T4H theme from the semantic tokens above. Do not hand-author Astryx variable names from memory. Run `npx @astryxdesign/cli doctor --built .`, inspect component APIs with `npx @astryxdesign/cli component --list`, and validate a representative page in light and dark modes before marking the theme REAL.
 
 ## Keep it current
 
