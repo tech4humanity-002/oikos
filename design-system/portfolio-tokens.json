@@ -1,0 +1,123 @@
+{
+  "name": "T4H Portfolio Design Tokens",
+  "source_workbook": "OIKOS_Portfolio_Canonical_Registry_v6_AUTONOMOUS_PODS_COMPLETE.xlsx",
+  "source_sheets": [
+    "01 Integrity Stack",
+    "02 Asset Templates",
+    "03 Brand Registry Completed",
+    "04 Colour Assignments",
+    "21 Validation Rules",
+    "23 Asset Template Specs"
+  ],
+  "status": "PARTIAL",
+  "rules": {
+    "brand_authority": "The OIKOS workbook owns brand identity and asset rules. Framework defaults never override it.",
+    "assignment": "Every output resolves a brand ID, one integrity layer L1-L7 and one asset template A/B/C.",
+    "colour": "Use the shared navy, white and slate base. Layer colours are accents, not standalone palettes.",
+    "framework": "Astryx is a React component implementation source only where React is appropriate.",
+    "adapters": "All formats consume the same semantic tokens through target-native adapters."
+  },
+  "base": {
+    "navy": "#17324D",
+    "navy_dark": "#0B1F33",
+    "white": "#FFFFFF",
+    "slate": "#475569",
+    "surface": "#FFFFFF",
+    "surface_muted": "#E9EDF2"
+  },
+  "semantic": {
+    "success": "#16A34A",
+    "info": "#0EA5E9",
+    "warning": "#F59E0B",
+    "error": "#DC2626"
+  },
+  "layers": [
+    {
+      "id": "L1",
+      "name": "Foundation & Canonical",
+      "primary": "#17324D",
+      "dark": "#0B1F33",
+      "light": "#E9EDF2",
+      "template": "A"
+    },
+    {
+      "id": "L2",
+      "name": "Human Outcomes & Capability",
+      "primary": "#168A5B",
+      "dark": "#0E5F3F",
+      "light": "#DFF5EA",
+      "template": "B"
+    },
+    {
+      "id": "L3",
+      "name": "Assurance & Relationship Operations",
+      "primary": "#0F766E",
+      "dark": "#0B4F4A",
+      "light": "#CBEFE7",
+      "template": "A"
+    },
+    {
+      "id": "L4",
+      "name": "Signals, Neuro & Integrity",
+      "primary": "#3155A4",
+      "dark": "#1E3678",
+      "light": "#DEE8FF",
+      "template": "C"
+    },
+    {
+      "id": "L5",
+      "name": "Agents & Automation",
+      "primary": "#6F42C1",
+      "dark": "#4B2A86",
+      "light": "#EEE5FF",
+      "template": "C"
+    },
+    {
+      "id": "L6",
+      "name": "Commercial Ventures & Market Entry",
+      "primary": "#D97706",
+      "dark": "#92400E",
+      "light": "#FEF3C7",
+      "template": "A"
+    },
+    {
+      "id": "L7",
+      "name": "Research, Internal & Experiments",
+      "primary": "#6B7280",
+      "dark": "#374151",
+      "light": "#F3F4F6",
+      "template": "C"
+    }
+  ],
+  "templates": [
+    {
+      "id": "A",
+      "name": "Corporate / Commercial",
+      "use": "Foundations, assurance, market entry and executive-facing offers"
+    },
+    {
+      "id": "B",
+      "name": "Human / Outcome",
+      "use": "People, family, learning, support and capability"
+    },
+    {
+      "id": "C",
+      "name": "Signal / Agent / Internal",
+      "use": "Signals, agents, research, internal and technical systems"
+    }
+  ],
+  "typography": {
+    "status": "PARTIAL",
+    "note": "Legacy visual boards are reference inputs. Font families, licences, fallbacks, weights and icon rules still require reconciliation."
+  },
+  "astryx": {
+    "packages": [
+      "@astryxdesign/core",
+      "@astryxdesign/theme-neutral",
+      "@stylexjs/stylex"
+    ],
+    "role": "React component implementation layer",
+    "status": "PARTIAL",
+    "note": "Verify current exports, theme extension API, accessibility and package compatibility before production binding."
+  }
+}
