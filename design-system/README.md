@@ -15,7 +15,7 @@ These files are generated from the OIKOS portfolio workbook. The workbook remain
 
 REAL: source values extracted from the workbook into JSON and CSS; seven layers and three templates represented; workbook contains the integration and adapter contract.
 
-PARTIAL: the custom Astryx theme has not yet been generated from the current CLI version; typography and icon reconciliation, renderer wiring across existing factories, accessibility/contrast automation, and production render verification remain open.
+PARTIAL: `t4h-portfolio-theme.tsx` is authored against Astryx's documented public `defineTheme` contract but has not yet been compiled with the pinned CLI version; typography and icon reconciliation, renderer wiring across existing factories, accessibility/contrast automation, and production render verification remain open.
 
 ## Astryx theme build procedure
 
@@ -29,3 +29,4 @@ When the workbook changes, regenerate these files from its source sheets. When a
 
 - `portfolio-tokens.json`: machine-readable source-derived tokens and integration boundaries.
 - `portfolio-tokens.css`: CSS variables for web and extension surfaces.
+- `t4h-portfolio-theme.tsx`: candidate Astryx theme extending the neutral theme with workbook-derived light/dark semantic tokens and seven local layer tokens. It is source-only until built and visually verified with the pinned Astryx CLI.
