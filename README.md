@@ -19,6 +19,10 @@ This repository contains the current OIKOS desktop conversation surface. MCP is 
 - Runtime state and receipts surfaced as REAL/DEGRADED
 - Model discovery from the live Universal Chat runtime, while preferring exact configured model IDs
 
+## Shared design and asset tokens
+
+The portfolio design contract and generated tokens are maintained in [`design-system/`](design-system/README.md). They are derived from the OIKOS portfolio workbook and consumed by compatible product and asset renderers. Astryx is used only for React-compatible interfaces; other outputs use native adapters.
+
 ## Persistence
 The OIKOS front end sends turns to the existing T4H Universal Chat Cloudflare Worker. That runtime persists conversation messages, executions and receipts in the Supabase conversation/runtime stores. The browser also keeps the BYOK token in session storage only.
 
